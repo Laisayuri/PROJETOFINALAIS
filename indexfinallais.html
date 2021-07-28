@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <title>Cadastro Pessoal - Itaú</title>
+    <link rel="stylesheet" href="estilo.css" />
+    
+  
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Formulário -->
+      <form action="" id="formulario" method="POST" name="formulario">
+        <legend>
+          Cadastro Pessoal - Atração
+        </legend>
+        
+        <p>
+          <hr style="height: 1px; color: black; background-color:black"> 
+          <p>
+
+        <div class="input-group">
+          <label for="nome">Nome completo:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Preenchimento obrigatório"
+          />
+        </div>
+        <div class="input-group">
+          <label for="cpf">CPF:</label>
+          <input
+            type="text"
+            id="cpf"
+            placeholder="Preenchimento obrigatório"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="rg">RG:</label>
+          <input
+            type="text"
+            id="rg"
+          
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="sexo">Sexo:</label>
+          <select name="sexo" id="sexo">
+            <option value="">informar...</option>
+            <option value="m">Masculino</option>
+            <option value="f">Feminino</option>
+            <option value="x">Não informar</option>
+          </select>
+        </div>
+
+        <div class="colunas">
+        <div class="input-group">
+          <label for="rua">Endereço:</label>
+          <input type="rua" id="rua" size="48" placeholder="Preenchimento obrigatório" />
+        </div>
+      
+
+        <div class="input-group">
+          <label for="numero">Número:</label>
+          <input type="text" size="12"
+		 id="numero"
+		 placeholder="Preenchimento obrigatório"
+/>
+    </div>
+    </div>
+
+      
+    <div class="input-group">
+          <label for="bairro">Bairro:</label>
+          <input type="text"
+		 id="bairro" />
+        </div>
+        
+        <div class="colunas">
+          <div class="input-group">
+          <label for="cidade">Cidade:</label>
+          <input type="text" size="25"
+		                id="cidade"/>
+                    </div>
+
+        <div class="input-group">
+          <label for="Estado">Estado</label>
+          <select id="Estado">
+              <option value="Estado">AC</option>
+              <option value="Estado">AL</option>
+              <option value="Estado">AP</option>
+              <option value="Estado">AM</option>
+              <option value="Estado">BA</option>
+              <option value="Estado">CE</option>
+              <option value="Estado">DF</option>
+              <option value="Estado">ES</option>
+              <option value="Estado">GO</option>
+              <option value="Estado">MA</option>
+              <option value="Estado">MT</option>
+              <option value="Estado">MS</option>
+              <option value="Estado">MG</option>
+              <option value="Estado">PA</option>
+              <option value="Estaod">PB</option>
+              <option value="Estado">PE</option>
+              <option value="Estado">PI</option>
+              <option value="Estado">RJ</option>
+              <option value="Estado">RN</option>
+              <option value="Estado">RS</option>
+              <option value="Estado">RO</option>
+              <option value="Estado">RR</option>
+              <option value="Estado">SC</option>
+              <option value="Estado">SP</option>
+              <option value="Estado">SE</option>
+              <option value="Estado">TO</option>
+            </select>
+            </div>
+              
+        
+            <div class="input-group">
+              <label for="cep">CEP:</label>
+              <input type="text" id="cep" size="25" />
+            </div>
+          </div>
+
+        <div class="colunas">
+          <div class="input-group">
+            <label for="telefone fixo">Telefone fixo:</label>
+            <input
+              type="text" size="30"
+              id="telefone fixo" />
+          </div>
+
+          <div class="input-group">
+            <label for="celular">Telefone celular:</label>
+            <input type="text" id="celular" size="30" placeholder="Preenchimento obrigatório" />
+          </div>
+        </div>
+
+        
+        <hr style="height: 1px; color: black; background-color:black">  
+        <div class="footer">
+          <button type="button" class="botao" onclick="validar()">
+            Enviar</button>
+          </button>
+        </div>
+      </form>
+
+      <script>
+        /* Função Validar */
+        function validar() {
+          // pegando o valor do nome pelos names
+          var nome = document.getElementById("nome");
+          var cpf = document.getElementById("cpf");
+          var rua = document.getElementById("rua");
+          var numero = document.getElementById("numero");
+          var celular = document.getElementById("celular");
+
+
+
+          // verificar se o nome está vazio
+          if (nome.value == "") {
+            alert("Nome não informado");
+
+            // Deixa o input com o focus
+            nome.focus();
+            // retorna a função e não olha as outras linhas
+            return;
+          }
+          if (cpf.value == "") {
+            alert("CPF não informado");
+            cpf.focus();
+            return;
+          }
+          if (rua.value == "") {
+            alert("Endereço não informado");
+            rua.focus();
+            return;
+          }
+          if (numero.value == "") {
+            alert("Numero de endereço não informada");
+            numero.focus();
+            return;
+          }
+          if (celular.value == "") {
+            alert("celular não informado");
+            celular.focus();
+            return;
+          }
+
+
+          alert("Cadastro enviado! Muito obrigado =D");
+
+        }
+      </script>
+
+    </div>
+
+    <footer><p><b>
+      
+      Lais S. Yasunaka - @2021</b></p></footer>
+
+  </body>
+  
+</html>
