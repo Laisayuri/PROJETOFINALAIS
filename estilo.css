@@ -18,11 +18,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+
 }
 #formulario {
-  width: 500px;
-  min-height: 400px;
+  margin-left: 30%;
+  margin-right: 30%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 30px;
@@ -78,4 +78,19 @@ body {
 }
 .botao:hover {
   background: #5988bd;
+}
+
+#rodape{
+  background: white;
+  margin-left: 32%;
+  margin-right: 32%;
+  margin-top: 0%;
+  padding: 0.5%;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+img{
+  width: 10%;
 }
