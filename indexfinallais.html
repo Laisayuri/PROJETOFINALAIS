@@ -7,7 +7,6 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- Formulário -->
       <form action="" id="formulario" method="POST" name="formulario">
         <legend>
           Cadastro Pessoal - Atração
@@ -65,8 +64,7 @@
           <label for="numero">Número:</label>
           <input type="text" size="12"
 		 id="numero"
-		 placeholder="Preenchimento obrigatório"
-/>
+		 placeholder="Preenchimento obrigatório"/>
     </div>
     </div>
 
@@ -148,7 +146,8 @@
 
       <script>
         /* Função Validar */
-        function validar() {
+        function validar() 
+        {
           // pegando o valor do nome pelos names
           var nome = document.getElementById("nome");
           var cpf = document.getElementById("cpf");
@@ -196,11 +195,12 @@
 
     </div>
 
-    <footer><p><b></b>
+    <footer>
       
-      Lais S. Yasunaka - @2021</b></p>
-      <img scr="/Imagens/LogoItau.png" alt="LogoItau">
-      <img scr="/Imagens/LogoGamaAcademy.png" alt="LogoGamaAcademy">
+      Lais S. Yasunaka todos os direitos reservados - @2021
+      <img id="Logoitau"scr="./Imagens/1.png" alt="LogoItau">
+      <img id="LogoGamaAcademy"scr="./Imagens/2.png" alt="LogoGamaAcademy">
+      <img id="LogoGithub"scr="Imagens/Perfil.jpg" alt="LogoGithub">
       
     </footer>
 
